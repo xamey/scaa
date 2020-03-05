@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="userui.ComponentChoiceController">
+    <children>
+        <RadioButton fx:id="isSelectedView"/>
+        <Label fx:id="labelView"/>
+    </children>
+</HBox>
+-->
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scaa.scaa.ui.userui.ComponentChoiceController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="190.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="410.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="116.0" prefWidth="190.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+            <children>
+                <RadioButton fx:id="isSelectedView" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" text="Choose" />
+            </children>
+        </Pane>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="labelView" layoutX="14.0" layoutY="27.0" text="Component" textFill="#4800ff">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            </children>
+        </Pane>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Required interfaces">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Text>
+            <TextArea fx:id="tfRequiredInterfaces" editable="false" prefHeight="200.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+        <VBox prefHeight="70.0" prefWidth="388.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Provided interfaces">
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Text>
+            <TextArea fx:id="tfProvidedInterfaces" prefHeight="200.0" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+    </children>
+</GridPane>

@@ -1,0 +1,70 @@
+{
+  "components" : [
+    {
+      "name": "AppareilPhoto",
+      "services" : [
+        {
+          "name": "Récupérer",
+          "description": "Permet de récupérer les photos de l'appareil",
+          "required": "false"
+        },
+        {
+          "name": "Clic",
+          "description": "Permet d'effectuer une action",
+          "required": "false"
+        }
+      ]
+    },
+    {
+      "name": "Interrupteur1",
+      "services": [
+        {
+          "name": "Clic",
+          "description": "Permet d'effectuer une action",
+          "required": "true"
+        }
+      ]
+    },
+    {
+      "name": "Interrupteur2",
+      "services": [
+        {
+          "name": "Clic",
+          "description": "Permet d'effectuer une action",
+          "required": "true"
+        }
+      ]
+    },
+    {
+      "name": "Visionneuse",
+      "services": [
+        {
+          "name": "Récupérer",
+          "description": "Demande à récupérer des photos",
+          "required": "true"
+        },
+        {
+          "name" : "Commander",
+          "description" : "permet de commander la visionneuse",
+          "required": "false"
+        }
+      ]
+    },
+    {
+      "name": "Télécommande",
+      "services": [
+        {
+          "name": "Commander",
+          "description" : "permet d'effectuer des commandes",
+          "required": "true"
+        },
+        {
+          "name": "Clic",
+          "description" : "Permet d'allumer la télécommande"
+        }
+      ]
+    }
+  ],
+  "applications" : [
+  ]
+}
